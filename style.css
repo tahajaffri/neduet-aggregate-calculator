@@ -95,3 +95,36 @@ button:hover {
 .credits a:hover {
     text-decoration: underline;
 }
+
+/* Result Wrapper Styles */
+.result-wrapper {
+    text-align: center;
+    color: white;
+}
+
+/* Aggregate and NU Test Marks Styles */
+.aggregate, .nu-test-marks {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Go Back Button Styles */
+.go-back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.go-back-button:hover {
+    background-color: #218838;
+}
+
+/* Result Background Class */
+.result-background {
+    background-color: #28a745;
+    transition: background-color 0.5s ease;
+}
