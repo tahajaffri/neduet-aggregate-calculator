@@ -19,7 +19,6 @@ function calculate() {
     document.body.innerHTML = `
         <div class="result-wrapper">
             <p class="aggregate">Aggregate: <span id="aggregate-value">0</span></p>
-            <p class="nu-test-marks">Entry Test Marks: <span id="marks-value">0</span></p>
             <button class="go-back-button" onclick="goBack()">Go Back</button>
         </div>
     `;
@@ -30,13 +29,10 @@ function calculate() {
     window.previousFormContent = formContent;
 
     // Start counting effect for aggregate
-    countUp('aggregate-value', 0, aggregate.toFixed(2), 500, () => {
-        // Start counting effect for NU Test Marks after aggregate
-        countUp('marks-value', 0, entryTestMarks.toFixed(2), 500);
-    });
+    countUp('aggregate-value', 0, aggregate.toFixed(2), 1000);
 }
 
-function countUp(elementId, start, end, duration, callback) {
+function countUp(elementId, start, end, duration) {
     const steps = 50; // Number of steps for smoother animation
     const stepDuration = duration / steps; // Duration per step
     const increment = (end - start) / steps; // Amount to increment per step
@@ -49,7 +45,6 @@ function countUp(elementId, start, end, duration, callback) {
         if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
             current = end;
             obj.innerHTML = end;
-            if (callback) callback(); // Call the callback if provided
         } else {
             obj.innerHTML = current.toFixed(2);
             setTimeout(step, stepDuration); // Use setTimeout for smoother control
