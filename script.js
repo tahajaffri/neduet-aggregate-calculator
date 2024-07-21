@@ -29,11 +29,11 @@ function calculate() {
     window.previousFormContent = formContent;
 
     // Start counting effect for aggregate
-    countUp('aggregate-value', 0, aggregate.toFixed(2), 1000);
+    countUp('aggregate-value', 0, aggregate.toFixed(2), 500); // Make the duration shorter for faster counting
 }
 
 function countUp(elementId, start, end, duration) {
-    const steps = 50; // Number of steps for smoother animation
+    const steps = 20; // Reduce the number of steps for faster animation
     const stepDuration = duration / steps; // Duration per step
     const increment = (end - start) / steps; // Amount to increment per step
 
