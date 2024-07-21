@@ -1,0 +1,97 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #46A683;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Container Styles */
+.container {
+    background-color: #333140;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    overflow: auto;
+}
+
+/* Heading Styles */
+h1, h2 {
+    text-align: center;
+    margin: 0;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styles */
+label {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Styles */
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #4F5D75;
+    color: #fff;
+}
+
+/* Button Styles */
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+button:hover {
+    background-color: #218838;
+}
+
+/* Results Section */
+.result-section {
+    margin-top: 20px;
+}
+
+/* Bold Numbers in Results */
+.result-section span.result-number {
+    font-weight: bold;
+}
+
+/* Credits Styles */
+.credits {
+    text-align: center;
+    font-size: 0.9em;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+}
+.credits a {
+    color: #28a745;
+    text-decoration: none;
+}
+.credits a:hover {
+    text-decoration: underline;
+}
